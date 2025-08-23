@@ -44,8 +44,7 @@ body {
   color: black;
 }
 
-
-.nav-item:hover{
+.nav-item:hover {
   color: var(--link-active);
 }
 
@@ -66,19 +65,26 @@ body {
   color: var(--link-active);
 }
 
-.is-active::after{
-   content: '';
-    background-color: var(--link-active);
-    border: 2px solid var(--link-active);
-    border-radius: 8px;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-  }
+.is-active::after {
+  content: '';
+  background-color: var(--link-active);
+  border: 2px solid var(--link-active);
+  border-radius: 8px;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
 
 .header {
   display: flex;
   justify-content: space-between;
-  margin: 0 50px;
+}
+
+.header-container {
+  display: flex;
+  padding: 0 50px;
+  width: 100%;
+  justify-content: space-between;
 }
