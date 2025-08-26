@@ -21,21 +21,21 @@ body {
 
 .nav__list {
   list-style: none;
+  margin: 0;
   padding-inline-start: 0;
 }
 
 .nav {
   align-items: center;
-  height: 60px;
 }
 
 .nav,
 .nav__list,
-.nav__item {
+.nav__link {
   display: flex;
 }
 
-.nav__item {
+.nav__link {
   text-transform: uppercase;
   position: relative;
   align-items: center;
@@ -44,11 +44,11 @@ body {
   color: black;
 }
 
-.nav__item:hover {
+.nav__link:hover {
   color: var(--link-active);
 }
 
-.nav__item__wrapper:not(:first-child) {
+.nav__item:not(:first-child) {
   margin-left: 20px;
 }
 
